@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0C772E96-A623-458A-98B1-92DE1964DC2A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Display_TAG_Search</RootNamespace>
+    <AssemblyName>Display_TAG_Search</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Display_TAG_Search.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Frm_Principal.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Formularios\Frm_ValidaCPF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_ValidaCPF.Designer.cs">
+      <DependentUpon>Frm_ValidaCPF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_ConteudoArquivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_ConteudoArquivo.Designer.cs">
+      <DependentUpon>Frm_ConteudoArquivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_Mascara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_Mascara.Designer.cs">
+      <DependentUpon>Frm_Mascara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ArquivoImagem_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frm_ArquivoImagem_UC.Designer.cs">
+      <DependentUpon>Frm_ArquivoImagem_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Login.Designer.cs">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Mensagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Mensagem.Designer.cs">
+      <DependentUpon>Frm_Mensagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Tela_Inicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Tela_Inicial.Designer.cs">
+      <DependentUpon>Frm_Tela_Inicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_ValidaCPF2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_ValidaCPF2.Designer.cs">
+      <DependentUpon>Frm_ValidaCPF2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_ValidaSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_ValidaSenha.Designer.cs">
+      <DependentUpon>Frm_ValidaSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Tela_Inicial_UC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Tela_Inicial_UC.Designer.cs">
+      <DependentUpon>Frm_Tela_Inicial_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ValidaCPF2_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frm_ValidaCPF2_UC.Designer.cs">
+      <DependentUpon>Frm_ValidaCPF2_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ValidaCPF_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frm_ValidaCPF_UC.Designer.cs">
+      <DependentUpon>Frm_ValidaCPF_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ValidaSenha_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frm_ValidaSenha_UC.Designer.cs">
+      <DependentUpon>Frm_ValidaSenha_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Teste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teste.Designer.cs">
+      <DependentUpon>Teste.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Formularios\Frm_ConteudoArquivo.resx">
+      <DependentUpon>Frm_ConteudoArquivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_Mascara.resx">
+      <DependentUpon>Frm_Mascara.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_ValidaCPF.resx">
+      <DependentUpon>Frm_ValidaCPF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_ValidaCPF2.resx">
+      <DependentUpon>Frm_ValidaCPF2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_ValidaSenha.resx">
+      <DependentUpon>Frm_ValidaSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ArquivoImagem_UC.resx">
+      <DependentUpon>Frm_ArquivoImagem_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Login.resx">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Mensagem.resx">
+      <DependentUpon>Frm_Mensagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Tela_Inicial_UC.resx">
+      <DependentUpon>Frm_Tela_Inicial_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ValidaCPF2_UC.resx">
+      <DependentUpon>Frm_ValidaCPF2_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ValidaCPF_UC.resx">
+      <DependentUpon>Frm_ValidaCPF_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ValidaSenha_UC.resx">
+      <DependentUpon>Frm_ValidaSenha_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Frm_Tela_Inicial.resx">
+      <DependentUpon>Frm_Tela_Inicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teste.resx">
+      <DependentUpon>Teste.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Frm_Principal.ico" />
+    <Content Include="Imagens\Frm_DemonstracaoKey.ico" />
+    <Content Include="Imagens\Frm_DemonstracaoKey.png" />
+    <Content Include="Imagens\Frm_HelloWorld.ico" />
+    <Content Include="Imagens\Frm_HelloWorld.png" />
+    <Content Include="Imagens\Frm_Mascara.ico" />
+    <Content Include="Imagens\Frm_Mascara.png" />
+    <Content Include="Imagens\Frm_Principal.ico" />
+    <Content Include="Imagens\Frm_ValidaCPF.ico" />
+    <Content Include="Imagens\Frm_ValidaCPF.png" />
+    <Content Include="Imagens\Frm_ValidaCPF2.ico" />
+    <Content Include="Imagens\Frm_ValidaCPF2.png" />
+    <Content Include="Imagens\Frm_ValidaSenha.ico" />
+    <Content Include="Imagens\Frm_ValidaSenha.png" />
+    <Content Include="Imagens\icons8-ponto-de-interrogação-64%281%29.ico" />
+    <Content Include="Imagens\icons8-ponto-de-interrogação-64.png" />
+    <Content Include="Imagens\key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Biblioteca\Biblioteca.csproj">
+      <Project>{4ea6a64b-4ee3-4986-a866-4c9b5be031d6}</Project>
+      <Name>Biblioteca</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
